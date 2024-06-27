@@ -116,7 +116,7 @@ app = Flask(__name__)
 # cors = CORS(app)
 CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}}) # Connecting with Frontend
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://root:For85SQL58%40PA!04@localhost/online_shopping"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://root:yourpassword@localhost/online_shopping"
 app.json.sort_keys = False
 
 class Base(DeclarativeBase):
